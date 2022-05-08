@@ -1,9 +1,11 @@
 import carousel from '../components/carousel';
 
+// Função principal
 fetchCourses()
 
 var AllCourses
 
+// Função responsável por carregar informações da API
 function fetchCourses() {
   fetch('http://localhost:4401/courses')
 .then(response => response.json())
@@ -13,6 +15,7 @@ function fetchCourses() {
 });
 }
 
+// Função responsável por organizar informações da API
 function renderCourses() {
     AllCourses.map((elem) => { 
       let carouselList = document.getElementById("carousel-scroll");
@@ -21,7 +24,6 @@ function renderCourses() {
         title="${elem.title}"
         time="${elem.time}"   
       />`
-
       carouselList.insertAdjacentHTML('beforeend', htmlInsert);  
     })
 }
