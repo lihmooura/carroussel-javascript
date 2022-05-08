@@ -1,28 +1,42 @@
 <!DOCTYPE html>
     <head>
-
-        <title>Carousel</title>
-
+        <title>Carroussel</title>
         <link rel="stylesheet" href="main.css">
     </head>
 
     <body>
         <div>
-            
             <div class="carousel">
                 <div class="carousel-header">
-                    <p class="carousel-title blue">Cursos Recentes: </p>
+                    <p class="carousel-title blue">Cursos Recentes </p>
                     <div class="icon-wrapper">
-                        <img class="icon"  src="./img/right.png" />
-                        <img class="icon"  src="./img/left.png" />
+                        <img class="icon" onclick="scrollRight('left')" src="./img/right.png" />
+                        <img class="icon" onclick="scrollRight('right')"  src="./img/left.png" />
+                </div>
+            </div>
+                 <div id="carousel-scroll">
                     </div>
-           
                 </div>
-       <div id="carousel-scroll">
-       </div>
-                </div>
-        </div>
-            <script src="bundle.js"></script>
+            </div>
+        
+    <script src="bundle.js"></script>
+        <script>
+            function scrollRight(direction) { 
+                var container = document.getElementById('carousel-scroll');
+                scrollCompleted = 0;
+                    var slideVar = setInterval(function(){
+                    if(direction == 'left'){
+                        container.scrollLeft -= 40;
+                        } else {
+                            container.scrollLeft += 40;
+                        }
+                        scrollCompleted += 20;
+                        if(scrollCompleted >= 100){
+                            window.clearInterval(slideVar);
+                        }
+                     }, 50);
+                }
+        </script>
     </body>
     
 </html> 

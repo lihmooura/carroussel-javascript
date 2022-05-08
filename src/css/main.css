@@ -62,8 +62,7 @@
     background-color: white;
     margin-right: 15px;
 }
-.carousel-item:hover { 
-    /* background-color: rgb(244, 242, 242); */
+.carousel-item:hover {
     cursor: pointer;
     -webkit-box-shadow: -1px 1px 12px -3px rgba(0,0,0,0.24); 
     box-shadow: -1px 1px 12px -3px rgba(0,0,0,0.24);
@@ -81,16 +80,15 @@
     line-height: 18px;
     letter-spacing: 0px;
     text-align: left;
-
 }
 .card-footer { 
     display: flex;
     justify-content: start;
     align-items: center;
+    color: #BEC8D8;
 }
 hr { 
     margin-top: 50px;
-    background-color: #F2F7FE !important;
     height: 1px;
     border: none;
 }
