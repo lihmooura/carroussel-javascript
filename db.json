@@ -1,11 +1,11 @@
 {
     "courses": [
-        {"id": 1, "title": "Rebranding: Adaptando sua marca as mudancas"},
-        {"id": 2, "title": "Rebranding: Adaptando sua marca as mudancas"},
-        {"id": 3, "title": "Rebranding: Adaptando sua marca as mudancas"},
-        {"id": 4, "title": "Rebranding: Adaptando sua marca as mudancas"},
-        {"id": 5, "title": "Rebranding: Adaptando sua marca as mudancas"},
-        {"id": 6, "title": "Rebranding: Adaptando sua marca as mudancas"},
-        {"id": 7, "title": "Rebranding: Adaptando sua marca as mudancas"}
+        {"id": 1, "title": "Rebranding: Adaptando sua marca as mudancas", "time": "6h"},
+        {"id": 2, "title": "Rebranding: Adaptando sua marca as mudancas", "time": "4h"},
+        {"id": 3, "title": "Rebranding: Adaptando sua marca as mudancas", "time": "2h"},
+        {"id": 4, "title": "Rebranding: Adaptando sua marca as mudancas", "time": "12h"},
+        {"id": 5, "title": "Rebranding: Adaptando sua marca as mudancas", "time": "1h"},
+        {"id": 6, "title": "Rebranding: Adaptando sua marca as mudancas", "time": "16h"},
+        {"id": 7, "title": "Rebranding: Adaptando sua marca as mudancas", "time": "48h"}
     ]
 }

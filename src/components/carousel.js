@@ -1,6 +1,7 @@
 class carouselItem extends HTMLElement {
   connectedCallback() {
     var title = this.attributes.title.value
+    var time = this.attributes.time.value
     
     this.innerHTML = `
     <div class="carousel-item">
@@ -10,7 +11,7 @@ class carouselItem extends HTMLElement {
     <hr />
     <div class="card-footer">
         <img class="card-icon-clock" src="img/time-clock.png" />
-        <p>6H</p>
+        <p>${time}</p>
     </div>
   </div>
     `

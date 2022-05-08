@@ -7,7 +7,11 @@ function renderCourses() {
     console.log(AllCourses)
     AllCourses.map((elem) => { 
       let carouselList = document.getElementById("carousel-scroll");
-      let htmlInsert = `<carousel-component title="${elem.title}"   />`
+      let htmlInsert = `
+      <carousel-component 
+        title="${elem.title}"
+        time="${elem.time}"   
+      />`
 
       carouselList.insertAdjacentHTML('beforeend', htmlInsert);  
     })
@@ -21,6 +25,10 @@ function fetchCourses() {
     renderCourses(AllCourses)
   });
 }
+
+// $('.scrollto').click(function() {
+//   $('#container').animate( { scrollLeft: '-=500' }, 1000, 'easeOutQuad' );
+// });
 
 function main() {
     fetchCourses()
