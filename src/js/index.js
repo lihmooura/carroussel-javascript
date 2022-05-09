@@ -1,9 +1,9 @@
 import carousel from '../components/carousel';
 
 // Função principal
-fetchCourses()
+Main()
 
-var AllCourses
+var AllCourses 
 
 // Função responsável por carregar informações da API
 function fetchCourses() {
@@ -15,7 +15,7 @@ function fetchCourses() {
 });
 }
 
-// Função responsável por organizar informações da API
+// Função responsável por mapear o resultado dos cursos da API
 function renderCourses() {
     AllCourses.map((elem) => { 
       let carouselList = document.getElementById("carousel-scroll");
@@ -26,4 +26,10 @@ function renderCourses() {
       />`
       carouselList.insertAdjacentHTML('beforeend', htmlInsert);  
     })
+}
+
+
+// Funcoes sendo chamadas 
+function Main() { 
+   fetchCourses()
 }
